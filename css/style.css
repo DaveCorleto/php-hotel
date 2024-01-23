@@ -1,0 +1,10 @@
+.search-bar { 
+    color: blue;
+    background-color: coral;
+    font-size: 25px;
+    width: 75%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
