@@ -77,49 +77,38 @@
 // Li inserisco in una tabella: 
 foreach ($hotels as $hotel) {
     echo  
-    "<table class="table">"
-    "<thead>"
-        "<tr>"
-        "<th scope="col">"."#"."</th>"
-        "<th scope="col">"."Name Hotel"."</th>"
-        "<th scope="col">"."Description"."</th>"
-        "<th scope="col">"."Parcheggio"."</th>"
-        "<th scope="col">"."Voto"."</th>"
-        "<th scope="col">"."Distanza dal centro"."</th>"
-    "</thead>"
-    "<tbody>"
-        "<tr>"
-        "<th scope="row">"."1"."</th>"
-        "<td>"."$Hotel['name']"."</td>"
-        "<td>"."$Hotel['description'].""</td>"
-        "<td>"."$hotel['parking']"."</td>"
-        "<td>"."$hotel['vote']"."</td>"
-        "<td>"."$hotel['distance_to_center']"."</td>"
-        </tr>
-        <tr>
-        <th scope="row">2</th>
-        <td>Jacob</td>
-        <td>Thornton</td>
-        <td>@fat</td>
-        </tr>
-        <tr>
-        <th scope="row">3</th>
-        <td colspan="2">Larry the Bird</td>
-        <td>@twitter</td>
-        </tr>
-    </tbody>
-    </table>
-
+    "<table class=\"table\">".
+    "<thead>".
+        "<tr>".
+        "<th scope=\"col\">"."#"."</th>".
+        "<th scope=\"col\">"."Name Hotel"."</th>".
+        "<th scope=\"col\">"."Description"."</th>".
+        "<th scope=\"col\">"."Parcheggio"."</th>".
+        "<th scope=\"col\">"."Voto"."</th>".
+        "<th scope=\"col\">"."Distanza dal centro"."</th>".
+    "</tr>".
+    "</thead>".
+    "<tbody>".
+        "<tr>".
+        "<th scope=\"row\">"."1"."</th>".
+        "<td>".$hotel['name']."</td>".
+        "<td>".$hotel['description']."</td>".
+        "<td>".$hotel['parking']."</td>".
+        "<td>".$hotel['vote']."</td>".
+        "<td>".$hotel['distance_to_center']."</td>".
+        "</tr>".
+    "</tbody>".
+    "</table>";
 }
 
-$vote = $_GET['vote'];
+// $vote = $_GET['vote'];
 
-if (
-    $vote <=5 
-    && strpose ($hotels[vote])== true
-){
-    echo "ecco gli hotel con questa valutazione:" . $hotels
-}
+// if (
+//     $vote <=5 
+//     && strpose ($hotels[vote])== true
+// ){
+//     echo "ecco gli hotel con questa valutazione:" . $hotels
+// }
 
 
 
